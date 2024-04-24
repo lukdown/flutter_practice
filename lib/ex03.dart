@@ -10,9 +10,9 @@ class Ex03 extends StatelessWidget {
 
       body: Image.asset(
         'assets/images/Gangho-dong.jpg',
-        width: 500.0,
-        height: 700.0,
-        fit: BoxFit.none,
+        width: 100.0,
+        height: 600.0,
+        fit: BoxFit.contain,
         alignment: Alignment.bottomRight,
       ),
 
