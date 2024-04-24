@@ -8,7 +8,14 @@ class Ex02 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text("Ex02:Text()"),),
 
-      body: Container(),
+      body: Text(
+        'Text()위젯',
+         style: TextStyle(
+          fontSize: 24,
+          fontWeight: FontWeight.bold,
+          color: Color(0xEE7B00FF),
+         )
+      ),
 
       floatingActionButton: FloatingActionButton(
         onPressed: () {

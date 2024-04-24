@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'ex01.dart';
 import 'ex02.dart';
+import 'ex03.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,10 +19,11 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
 
-      initialRoute: "/02",
+      initialRoute: "/03",
       routes: { // map
         '/': (context) => Ex01(), // 기본 홈 페이지
         '/02': (context) => Ex02(),
+        '/03': (context) => Ex03(),
       },
 
 
