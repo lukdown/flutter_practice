@@ -8,8 +8,9 @@ class Ex07 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text("Ex07:Row() + Column()")),
 
-      body: Row(
-        mainAxisAlignment: MainAxisAlignment.end,
+      body:
+      Row(
+        mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
@@ -19,11 +20,13 @@ class Ex07 extends StatelessWidget {
               child: Text("빨강"),
           ),
 
-          Column(
+          Container(
+            color: Color(0xff959595),
+            child: Column(
             children: [
               Container(
                 width: 150,
-                height: 50,
+                height: 70,
                 color: Color(0xff0000ff),
                   child: Text("파랑"),
               ),
@@ -35,6 +38,19 @@ class Ex07 extends StatelessWidget {
                   child: Text("노랑"),
               ),
             ],
+          ),
+          ),
+          Container(
+            width: 90,
+            height: 50,
+            margin: EdgeInsets.all(30),
+            child: OutlinedButton(
+              onPressed: (){
+                print("다음 페이지로 이동");
+                Navigator.pushNamed(context, '/08');
+              },
+              child: Text("Next Page"),
+            ),
           ),
         ],
       ),

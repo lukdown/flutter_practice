@@ -18,8 +18,10 @@ class Ex01 extends StatelessWidget {
 
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-
+          print("다음 페이지로 이동");
+          Navigator.pushNamed(context, '/02');
         },
+        child: Icon(Icons.home),
       ),
 
     );
