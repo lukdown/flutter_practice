@@ -4,6 +4,8 @@ import 'ex02.dart';
 import 'ex03.dart';
 import 'ex04.dart';
 import 'ex05.dart';
+import 'ex06.dart';
+import 'ex07.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,13 +23,15 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
 
-      initialRoute: "/05",
+      initialRoute: "/07",
       routes: { // map
         '/': (context) => Ex01(), // 기본 홈 페이지
         '/02': (context) => Ex02(),
         '/03': (context) => Ex03(),
         '/04': (context) => Ex04(),
         '/05': (context) => Ex05(),
+        '/06': (context) => Ex06(),
+        '/07': (context) => Ex07(),
       },
 
 
