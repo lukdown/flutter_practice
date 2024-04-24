@@ -6,9 +6,15 @@ class Ex01 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      
-      body: Container(),
+      appBar: AppBar(
+        title: Text("Ex01:Icon()"),
+      ),
+
+      body: Icon(
+          Icons.search,
+          size: 70.9, //소수점 가능
+          color: Color(0xff00d9ff)
+      ),
 
       floatingActionButton: FloatingActionButton(
         onPressed: () {
