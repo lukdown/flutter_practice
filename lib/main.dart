@@ -12,6 +12,8 @@ import 'ex10.dart';
 import 'ex11.dart';
 import 'ex12.dart';
 import 'ex13.dart';
+import 'ex14.dart';
+import 'ex15.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,7 +31,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
 
-      initialRoute: "/13",
+      initialRoute: "/15",
       routes: { // map
         '/': (context) => Ex01(), // 기본 홈 페이지
         '/02': (context) => Ex02(),
@@ -44,6 +46,8 @@ class MyApp extends StatelessWidget {
         '/11': (context) => Ex11(),
         '/12': (context) => Ex12(),
         '/13': (context) => Ex13(),
+        '/14': (context) => Ex14(),
+        '/15': (context) => Ex15(),
       },
 
 
