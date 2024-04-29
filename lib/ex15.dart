@@ -27,11 +27,14 @@ class _Ex15 extends StatefulWidget {
 // 할일 정의
 class _Ex15State extends State<_Ex15> {
   
+    bool isFavorite = false;
   // 초기화할때
-  
+
   // 화면에 출력할때
   @override
   Widget build(BuildContext context) {
+
+
     return Container(
       width: 450,
       color: Color(0xffffffff),
@@ -41,8 +44,15 @@ class _Ex15State extends State<_Ex15> {
           IconButton(
               onPressed: (){
                 print(Text("즐겨찾기 버튼 클릭"));
+                setState(() {
+                  isFavorite = !isFavorite;
+                });
               },
-              icon: Icon(Icons.star, color: Color(0xffdfdfdf),)
+              icon: Icon(
+                Icons.star,
+                //color: (isFavorite=true) ? Color(0xffff00ff) : Color(0xffd6d6d6),
+              color: _favorite(isFavorite),
+              )
           )
         ],
       ),
@@ -51,3 +61,12 @@ class _Ex15State extends State<_Ex15> {
   }
 }
 
+Color _favorite(bool isFavorite){
+  if(isFavorite == true){
+    // 코드
+    return Color(0xffff00ff);
+  }else{
+    // 코드
+    return Color(0xffd6d6d6);
+  }
+}
